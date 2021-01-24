@@ -7,6 +7,10 @@
 ** Keymap
    My current main layer keymap looks like this:
    [[./kbd-layout/kbd-layout.png]]
+** Build log
+   I have written a [[./build-log/readme.org][build log]] of my keyboard, in Portuguese. This might help you in
+   building your own. If you don't speak Portuguese, you can always follow the [[https://github.com/mattdibi/redox-keyboard/tree/master/redox][original
+   guide]].
 ** How to flash
    Just run:
    #+begin_src bash
