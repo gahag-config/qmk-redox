@@ -98,13 +98,13 @@
      #+html: <img src="5.all-switches.jpg" width="600px">
   5. Encaixe a placa de circuito na tampa junto dos /switches/, e garanta que ela está
      encaixada firmemente e sem folga. Então, solde todos os /switches/ na placa.
-     #+html: <img src="6.mounted_plate_left.jpg" width="600px">
+     #+html: <br><img src="6.mounted_plate_left.jpg" width="600px">
   6. Coloque o isolante elétrico entre as pernas dos Arduinos, para garantir que não
      haverá curtos com os diodos.
      #+html: <img src="7.insulating.jpg" width="600px">
   7. Solde os Arduinos. Na placa onde lê-se /Left/, *solde-o com os componentes para cima*. Na
      placa onde lê-se /Right/, *solde-o com os componentes para baixo*.
-     #+html: <img src="8.mounted_plate_right.jpg" width="600px">
+     #+html: <br><img src="8.mounted_plate_right.jpg" width="600px">
      #+html: <img src="8.2.mounted_plate_left.jpg" width="600px">
   8. Feche a caixa utilizando os parafusos.
   9. Encaixe as keycaps nos /switches/, e ligue os cabos.

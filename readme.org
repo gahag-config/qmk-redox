@@ -1,0 +1,15 @@
+* My personal redox config
+  This is the repository with everything I used to build the [[https://github.com/mattdibi/redox-keyboard][Redox]] keyboard, by Mattia Dal
+  Ben. Thank you Matt, you saved my hands.
+** My keyboard
+   This is what my keyboard looks like:
+   [[./build-log/9.done.jpg]]
+** Keymap
+   My current main layer keymap looks like this:
+   [[./kbd-layout/kbd-layout.png]]
+** How to flash
+   Just run:
+   #+begin_src bash
+      sudo make redox/rev1:default:avrdude
+   #+end_src
+   and then press the reset button.
