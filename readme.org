@@ -5,8 +5,13 @@
    This is what my keyboard looks like:
    [[./build-log/9.done.jpg]]
 ** Keymap
-   My current main layer keymap looks like this:
-   [[./kbd-layout/kbd-layout.png]]
+   My current layers look like this:
+   - Main:
+     [[./kbd-layout/def-layer.png]]
+   - Symbols:
+     [[./kbd-layout/sym-layer.png]]
+   - Navigation:
+     [[./kbd-layout/nav-layer.png]]
 ** Build log
    I have written a [[./build-log/readme.org][build log]] of my keyboard, in Portuguese. This might help you in
    building your own. If you don't speak Portuguese, you can always follow the [[https://github.com/mattdibi/redox-keyboard/tree/master/redox][original
