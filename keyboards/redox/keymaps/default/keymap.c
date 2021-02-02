@@ -5,22 +5,19 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 #define _QWERTY 0
-#define _SYMB 1
+#define _SYM 1
 #define _NAV 2
 #define _ADJUST 3
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
-  SYMB,
+  SYM,
   NAV,
   ADJUST,
 };
 
 // Shortcut to make keymap more readable
 #define KC_SYSRQ KC_SYSREQ
-
-#define LR_SYML   MO(_SYMB)
-#define LR_NAV    TG(_NAV)
 
 #define CTL_W  LCTL(KC_W)
 
@@ -37,13 +34,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB  ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,KC_LBRC                           ,KC_RBRC ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_QUOT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_APP  ,LR_SYML ,        KC_SYSRQ,KC_PSCR ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_GRV  ,
+     KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_APP  ,TG(_SYM),        KC_SYSRQ,KC_PSCR ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_GRV  ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     KC_HOME ,KC_PGUP ,KC_DEL  ,KC_BSPC      ,KC_LALT     ,KC_SPC  ,KC_LSFT ,        LR_SYML ,ALT_RET     ,KC_RCTL      ,LR_NAV  ,KC_CAPS ,KC_PGDN ,KC_END
+     KC_HOME ,KC_PGUP ,KC_DEL  ,KC_BSPC      ,KC_LALT     ,KC_SPC  ,KC_LSFT ,        MO(_SYM),ALT_RET     ,KC_RCTL      ,TG(_NAV),KC_CAPS ,KC_PGDN ,KC_END
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
-  [_SYMB] = LAYOUT(
+  [_SYM] = LAYOUT(
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
      _______ ,KC_F1   ,KC_F2   ,KC_F3   ,KC_F4   ,KC_F5   ,                                            KC_F6   ,KC_F7   ,KC_F8   ,KC_F9   ,KC_F10  ,XXXXXXX ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
@@ -67,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      _______ ,XXXXXXX ,XXXXXXX ,KC_MPLY ,XXXXXXX ,XXXXXXX ,_______ ,_______ ,        _______ ,_______ ,XXXXXXX ,KC_VOLU ,KC_MPLY ,KC_VOLD ,XXXXXXX ,_______ ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     _______ ,_______ ,_______ ,_______ ,     KC_BTN1 ,    KC_BTN2 ,KC_BTN3 ,        _______ ,_______ ,    _______ ,     LR_NAV  ,_______ ,_______ ,_______
+     _______ ,_______ ,_______ ,_______ ,     KC_BTN1 ,    KC_BTN2 ,KC_BTN3 ,        _______ ,_______ ,    _______ ,     TG(_NAV),_______ ,_______ ,_______
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
