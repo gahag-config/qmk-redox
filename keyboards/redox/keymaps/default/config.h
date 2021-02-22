@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_DELAY 0 // Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL 0 // Time between cursor movements
 #define MOUSEKEY_MAX_SPEED 3 // Maximum cursor speed at which acceleration stops
-#define MOUSEKEY_TIME_TO_MAX 20 // Time until maximum cursor speed is reached
+#define MOUSEKEY_TIME_TO_MAX 30 // Time until maximum cursor speed is reached
 #define MOUSEKEY_WHEEL_DELAY 0 // Delay between pressing a wheel key and wheel movement
 #define MOUSEKEY_WHEEL_INTERVAL 0 // Time between wheel movements
 #define MOUSEKEY_WHEEL_MAX_SPEED 1 // Maximum number of scroll steps per scroll action
