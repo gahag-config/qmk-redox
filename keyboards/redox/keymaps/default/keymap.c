@@ -22,7 +22,7 @@ enum custom_keycodes {
 #define CTL_W  LCTL(KC_W)
 
 #define SFT_SPC MT(MOD_LSFT, KC_SPC)
-#define HYPR_RET MT(MOD_HYPR, KC_ENT)
+#define CTRL_RET MT(MOD_RCTL, KC_ENT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -34,9 +34,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB  ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,KC_LCBR                           ,KC_RCBR ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_QUOT ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_APP  ,TG(_SYM),        KC_SYSRQ,KC_PSCR ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_GRV  ,
+     KC_LSFT ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_F24  ,TG(_SYM),        KC_SYSRQ,KC_PSCR ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_GRV  ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     KC_HOME ,KC_PGUP ,KC_DEL  ,KC_BSPC      ,KC_LALT     ,KC_SPC  ,KC_LSFT ,        MO(_SYM),HYPR_RET    ,KC_RCTL      ,TG(_NAV),KC_MINS ,KC_PGDN ,KC_END
+     KC_HOME ,KC_PGUP ,KC_DEL  ,KC_BSPC      ,KC_LALT     ,KC_SPC  ,KC_LSFT ,        KC_HYPR ,CTRL_RET    ,MO(_SYM)     ,TG(_NAV),TG(_GAM),KC_PGDN ,KC_END
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      _______ ,XXXXXXX ,KC_MPRV ,KC_MPLY ,KC_MNXT ,KC_WH_D ,_______ ,_______ ,        _______ ,_______ ,KC_BRID ,KC_VOLD ,KC_MPLY ,KC_VOLU ,XXXXXXX ,_______ ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     _______ ,_______ ,_______ ,_______ ,     KC_BTN1 ,    KC_BTN2 ,KC_BTN3 ,        _______ ,_______ ,    _______ ,     TG(_NAV),_______ ,_______ ,_______
+     _______ ,_______ ,_______ ,_______ ,     KC_BTN3 ,    KC_BTN1 ,KC_BTN2 ,        _______ ,_______ ,    _______ ,     TG(_NAV),_______ ,_______ ,_______
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
