@@ -66,7 +66,7 @@
       "a": 5,
       "w": 1.25
     },
-    "-\n\n\n\n\n\n_"
+    "caps lock"
   ],
   [
     {
@@ -308,7 +308,7 @@
     {
       "x": 12.5
     },
-    "caps"
+    "game layer"
   ],
   [
     {
@@ -339,7 +339,7 @@
       "ry": 4.25,
       "y": -1
     },
-    "multi",
+    "F24",
     "sym\n\n\n\n\n\nlayer"
   ],
   [
@@ -367,11 +367,11 @@
       "x": -2,
       "h": 1.5
     },
-    "sym layer",
+    "hyper",
     {
       "h": 1.5
     },
-    "enter\n\n\n\n\n\nmeta"
+    "enter\n\n\n\n\n\nctrl"
   ],
   [
     {
@@ -382,6 +382,6 @@
       "x": 11.75,
       "w": 1.25
     },
-    "ctrl"
+    "sym layer"
   ]
 ]

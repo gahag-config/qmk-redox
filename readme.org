@@ -3,7 +3,7 @@
   Ben. Thank you Matt, you saved my hands.
 ** My keyboard
    This is what my keyboard looks like:
-   [[./build-log/9.done.jpg]]
+   [[./build-log/13.update.jpg]]
 ** Keymap
    My current layers look like this:
    - Main:
@@ -12,6 +12,8 @@
      [[./kbd-layout/sym-layer.png]]
    - Navigation:
      [[./kbd-layout/nav-layer.png]]
+   - Gaming:
+     [[./kbd-layout/gam-layer.png]]
 ** Build log
    I have written a [[./build-log/readme.org][build log]] of my keyboard, in Portuguese. This might help you in
    building your own. If you don't speak Portuguese, you can always follow the [[https://github.com/mattdibi/redox-keyboard/tree/master/redox][original
