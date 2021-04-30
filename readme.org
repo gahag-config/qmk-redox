@@ -3,7 +3,7 @@
   Ben. Thank you Matt, you saved my hands.
 ** My keyboard
    This is what my keyboard looks like:
-   [[./build-log/13.update.jpg]]
+   [[./build-log/14.new-keycaps.jpg]]
 ** Keymap
    My current layers look like this:
    - Main:
