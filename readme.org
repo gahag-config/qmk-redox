@@ -1,26 +1,2 @@
-* My personal redox config
-  This is the repository with everything I used to build the [[https://github.com/mattdibi/redox-keyboard][Redox]] keyboard, by Mattia Dal
-  Ben. Thank you Matt, you saved my hands.
-** My keyboard
-   This is what my keyboard looks like:
-   [[./build-log/14.new-keycaps.jpg]]
-** Keymap
-   My current layers look like this:
-   - Main:
-     [[./kbd-layout/def-layer.png]]
-   - Symbols:
-     [[./kbd-layout/sym-layer.png]]
-   - Navigation:
-     [[./kbd-layout/nav-layer.png]]
-   - Gaming:
-     [[./kbd-layout/gam-layer.png]]
-** Build log
-   I have written a [[./build-log/readme.org][build log]] of my keyboard, in Portuguese. This might help you in
-   building your own. If you don't speak Portuguese, you can always follow the [[https://github.com/mattdibi/redox-keyboard/tree/master/redox][original
-   guide]].
-** How to flash
-   Just run:
-   #+begin_src bash
-      sudo make redox/rev1:default:avrdude
-   #+end_src
-   and then press the reset button.
+* Archived
+  This repository was superseded by [[https://github.com/gahag-config/qmk][gahag-config/qmk]]
